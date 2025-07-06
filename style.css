@@ -742,7 +742,7 @@ ul {
 } 
 
 .tp-testimonial-3-bg { 
-    background-image: url("/images/image_3.png");
+    background-image: url("images/image_3.png");
     background-repeat: no-repeat; 
     background-size: cover; 
     border-radius: 60px;
