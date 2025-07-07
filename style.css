@@ -2057,7 +2057,7 @@ h4 {
 
 .tp-service-sm-item:hover .tp-service-sm-link { 
     opacity: 1; 
-    /* visibility: hidden;   */
+    visibility: visible;  
 } 
 
 .tp-rated-icon { 
