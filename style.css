@@ -1349,6 +1349,8 @@ b {
     font-weight: bolder;
 } 
 
+
+
 .tp-btn-hover b  { 
     position: absolute; 
     width: 0px; 
@@ -1361,6 +1363,12 @@ b {
     transition: all 0.7s ease; 
     z-index: 1;
 } 
+
+.tp-btn-hover:hover b {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
 
 .tp-btn-hover.alt-color-black b  { 
     background-color: var(--tp-common-black);
@@ -2310,7 +2318,7 @@ h4 {
 .tp-test-arrow button:hover::after { 
     transform: scale(1.1); 
     opacity: 1; 
-    visibility: hidden;  
+    visibility: visible;  
 } 
 
 .tp-blog-thumb img  { 
@@ -2503,6 +2511,25 @@ div.tp-blog-thumb img  {
     transition: 0.3s; 
     position: relative; 
     top: 0;
+} 
+
+.tp-service-sm-link a:hover i {
+    animation: tfLeftToRight 0.4s forwards;
+}
+
+@keyframes tfLeftToRight { 
+    49% {
+        transform: translateX(30%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    51% {
+        opacity: 1;
+    }
+
 } 
 
 .author-rated-icon span  { 
