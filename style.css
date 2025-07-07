@@ -203,6 +203,10 @@ button {
     border: none;
 } 
 
+.scroll-top.open {
+    bottom: 80px;
+}
+
 button:not(:disabled) { 
     cursor: pointer;
 } 

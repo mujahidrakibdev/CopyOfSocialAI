@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.querySelector('.scroll-top');
+
+    // Show/hide button on scroll
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > window.innerHeight / 2) {
+        scrollBtn.classList.add('open');
+        } else {
+        scrollBtn.classList.remove('open');
+        }
+    });
+
+    // Scroll to top smoothly on click
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    });
+});
+
 const swiper = new Swiper('.swiper', {
     loop: true,
     centeredSlides: true,
