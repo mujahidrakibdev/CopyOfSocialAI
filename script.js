@@ -19,6 +19,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Sidebar
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuBtn = document.querySelector(".tp-menu-bar");
+    const sidebar = document.querySelector(".tpoffcanvas");
+    const overlay = document.querySelector(".body-overlay");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Open sidebar
+    menuBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        sidebar.classList.add("opened");
+        overlay.classList.add("apply");
+    });
+
+    // Close sidebar
+    closeBtn.addEventListener("click", function () {
+        sidebar.classList.remove("opened");
+        overlay.classList.remove("apply");
+    });
+
+    overlay.addEventListener("click", function () {
+        sidebar.classList.remove("opened");
+        overlay.classList.remove("apply");
+    });
+});
+
+// Sidebar Dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all expandable dropdown toggles inside the sidebar
+    const dropdownToggles = document.querySelectorAll(".mean-expand");
+
+    dropdownToggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Find the corresponding submenu (next sibling element)
+        const submenu = toggle.previousElementSibling;
+
+        // Toggle class and submenu visibility
+        if (toggle.classList.contains("mean-clicked")) {
+          toggle.classList.remove("mean-clicked");
+          submenu.style.display = "none";
+        } else {
+          toggle.classList.add("mean-clicked");
+          submenu.style.display = "block";
+        }
+      });
+    });
+  });
+
+// Swiper
 const swiper = new Swiper('.swiper', {
     loop: true,
     centeredSlides: true,
