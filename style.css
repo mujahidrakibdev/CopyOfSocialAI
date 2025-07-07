@@ -1046,6 +1046,10 @@ ul ul  {
   } 
 }     
 
+.swiper{
+    overflow: visible !important;
+}
+
 .swiper-wrapper { 
     position: relative; 
     width: 100%; 
@@ -2306,7 +2310,7 @@ h4 {
 .tp-test-arrow button:hover::after { 
     transform: scale(1.1); 
     opacity: 1; 
-    /* visibility: hidden;   */
+    visibility: hidden;  
 } 
 
 .tp-blog-thumb img  { 
