@@ -394,14 +394,8 @@ button:hover {
 } 
 
 img { 
-    vertical-align: middle;
-} 
-
-img { 
     max-width: 100%;
-} 
-
-img { 
+    vertical-align: middle;
     -webkit-transition: all 0.3s ease-out 0s; 
     -moz-transition: all 0.3s ease-out 0s; 
     -ms-transition: all 0.3s ease-out 0s; 
@@ -898,7 +892,7 @@ li {
 } 
 
 .tp-counter-wrapper { 
-    background: rgba(255, 255, 255, 0.03); 
+    background: white; 
     box-shadow: 0px 20px 80px rgba(7, 13, 32, 0.08); 
     backdrop-filter: blur(5px); 
     border-radius: 100px; 
@@ -1837,6 +1831,10 @@ h3 {
 .tp-sales-feature ul  { 
     display: inline-block;
 } 
+
+.tp-sales-main-thumb img{
+    border-radius: 30px;
+}
 
 .tp-sales-sub-img-2 { 
     position: absolute; 
@@ -2826,6 +2824,10 @@ div.tp-blog-thumb img  {
     font-family: var(--tp-ff-urban); 
     padding-bottom: 5px;
 } 
+
+.header-img{
+    width: 50px !important;
+}
 
 .tp-footer__social-3 a i  { 
     color: #82868C; 
