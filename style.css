@@ -241,11 +241,24 @@ button:hover {
     z-index: 5;
 } 
 
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .header__space {
+        padding: 15px 0;
+    }
+}
+
 .header-bottom__transparent { 
     position: absolute; 
     left: 0; 
     right: 0;
 } 
+
+.header-bottom__action-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
 
 .tpoffcanvas { 
     background-position: center; 
@@ -641,11 +654,16 @@ svg {
 @media (min-width: 1200px){ 
   .col-xl-6 { 
     flex: 0 0 auto; 
-    width: 50%;
+    width: 55%;
   } 
 }     
 
-
+@media (min-width: 1200px){ 
+  .automation { 
+    flex: 0 0 auto; 
+    width: 50%;
+  } 
+}  
 
 @media (min-width: 1400px){ 
   .col-xxl-6 { 
@@ -1108,14 +1126,15 @@ ul ul  {
 @media (min-width: 992px){ 
   .col-lg-2 { 
     flex: 0 0 auto; 
-    width: 16.66666667%;
+    width: 20%;
   } 
 } 
 
 @media (min-width: 992px){ 
   .col-lg-4 { 
     flex: 0 0 auto; 
-    width: 33.33333333%;
+    width: 25%;
+    margin: 0 auto;
   } 
 }  
 
@@ -2826,7 +2845,7 @@ div.tp-blog-thumb img  {
 } 
 
 .header-img{
-    width: 50px !important;
+    width: 125px !important;
 }
 
 .tp-footer__social-3 a i  { 
