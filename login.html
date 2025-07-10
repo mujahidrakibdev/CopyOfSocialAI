@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>Login - CRM Setu</title>
+      <link rel="shortcut icon" href="images/fav-icon.png"/>
+      <link rel="stylesheet" href="./login.css">
+
+      <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+   </head>
+   <body>
+        <div class="toastr-container position-top-right"></div>
+        <header class="">
+            <div class="header-signin-area header-bottom__transparent header-signin-ptb z-index-5">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="header-signin-logo"><a href="/"><img src="images/header-footer.png" class="header-logo" alt=""></a></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="header-signin-bar tp-menu-bar text-end"><button><i><span></span><span></span><span></span></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom__area header-bottom__transparent header-bottom__bdr z-index-5 d-none">
+                <div class="container">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
+                            <div class="header-bottom__logo"><a href="/"><img src="images/header-footer.png" alt=""></a></div>
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
+                            <div class="header-bottom__main-menu header-bottom__main-menu-4 header-bottom__main-menu-inner">
+                                <nav class="mobile-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a target="_self" role="button" href="/">Home</a></li>
+                                            <li><a target="_self" role="button" href="/about-us">About Us</a></li>
+                                            <li><a target="_self" role="button" href="">Explore</a>
+                                                <ul class="submenu first-level">
+                                                    <li class=""><a target="_self" href="/team">Team</a></li>
+                                                    <li class=""><a target="_self" href="/jobs">Career</a></li>
+                                                    <li class=""><a target="_self" href="/pricing">Pricing</a></li>
+                                                    <li class=""><a target="_self" href="/services">Services</a></li>
+                                                    <li class=""><a target="_self" href="/integrations">Integrations</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a target="_self" role="button" href="/blogs">Blogs</a></li>
+                                            <li><a target="_self" role="button" href="/contact-us">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
+                            <div class="header-bottom__right d-flex align-items-center justify-content-end">
+                                <div class="header-bottom__action header-bottom__action-4"><a class="d-none d-lg-inline-block header-bottom__action-2 border-none" href="/login"><span>Login</span></a></div>
+                                <div class="header-bottom__btn d-flex align-items-center"><a class="tp-btn-white tp-btn-hover alt-color-black d-none d-md-inline-block" href="/register"><span class="">Get Free</span><b></b></a><a class="header-bottom__bar tp-menu-bar d-lg-none" href="#"><i class="fal fa-bars"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="tpoffcanvas-area">
+            <div class="tpoffcanvas">
+                <div class="tpoffcanvas__close-btn"><button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="fs-4 iconify iconify--ep" width="1em" height="1em" viewBox="0 0 1024 1024">
+                            <path fill="currentColor" d="M764.288 214.592L512 466.88L259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512L214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path>
+                        </svg></button></div>
+                <div class="tpoffcanvas__logo text-center"><a href="/"><img src="images/header-footer.png" alt=""></a></div>
+                <div class="mobile-menu mean-container">
+                    <nav class="mean-nav">
+                        <ul>
+                            <li class=""><a href="/">Home</a></li>
+                            <li class=""><a href="/about-us">About Us</a></li>
+                            <li class="has-dropdowns"><a href="">Explore</a>
+                                <ul class="submenu style-xklcx" id="style-xklcx">
+                                    <li><a href="/team">Team</a></li>
+                                    <li><a href="/jobs">Career</a></li>
+                                    <li><a href="/pricing">Pricing</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/integrations">Integrations</a></li>
+                                </ul><a class="mean-expand" href="#"><i class="fal fa-plus"></i></a>
+                            </li>
+                            <li class=""><a href="/blogs">Blogs</a></li>
+                            <li class=""><a href="/contact-us">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tpoffcanvas__social">
+                    <div class="social-icon text-center"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <div class="body-overlay"></div>
+        </div>
+        <main>
+            <div class="signin-banner-area signin-banner-main-wrap d-flex align-items-center">
+                <div class="signin-banner-left-box signin-banner-bg p-relative style-gJYLP" id="style-gJYLP">
+                    <div class="signin-banner-bottom-shape"><img src="./images/b4m8AmozaiiiypHTkVBb.png" alt=""></div>
+                    <div class="signin-banner-left-wrap">
+                        <div class="signin-banner-title-box mb-100">
+                            <h4 class="signin-banner-title tp-char-animation">Welcome To <br> Your CRMsetu app.</h4>
+                        </div>
+                        <div class="signin-banner-img-box position-relative">
+                            <div class="signin-banner-img signin-img-1 d-none d-md-block z-index-3"><img src="./images/BHTJqeI6NNJclNvmhmRO.png" alt=""></div>
+                            <div class="signin-banner-img signin-img-2 d-none d-md-block"><img src="./images/Zm9ZNmUqAQqKnbhw08rJ.png" alt=""></div>
+                            <div class="signin-banner-img signin-img-3 d-none d-md-block z-index-5"><img src="./images/Fm4mMTxiOPXTvhn33FRY.jpg" alt=""></div>
+                            <div class="signin-banner-img signin-img-4 d-none d-sm-block"><img src="./images/nK83jgE3iUcEyO54YQQJ.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signin-banner-from d-flex justify-content-center align-items-center">
+                    <div class="signin-banner-from-wrap">
+                        <div class="signin-banner-title-box">
+                            <h4 class="signin-banner-from-title">Sign In</h4>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row signin-banner-login-browser gap-3"><a class="d-flex align-items-center justify-content-center mb-md-0 flex-fill mb-2 gap-1 text-nowrap" href="/auth/google"><svg class="mr-10" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.5642 11.7235C21.5642 10.8961 21.4957 10.2924 21.3474 9.66626H11.707V13.4005H17.3657C17.2517 14.3285 16.6356 15.7261 15.2665 16.6652L15.2473 16.7902L18.2954 19.1044L18.5066 19.125C20.4461 17.3696 21.5642 14.7869 21.5642 11.7235" fill="#4285F4"></path>
+                                    <path d="M11.7039 21.5625C14.4761 21.5625 16.8035 20.668 18.5034 19.1251L15.2633 16.6653C14.3963 17.2579 13.2326 17.6716 11.7039 17.6716C8.98861 17.6716 6.68407 15.9163 5.86257 13.4901L5.74215 13.5001L2.5727 15.9039L2.53125 16.0168C4.21972 19.3039 7.68797 21.5625 11.7039 21.5625Z" fill="#34A853"></path>
+                                    <path d="M5.86404 13.4901C5.64728 12.864 5.52183 12.1931 5.52183 11.5C5.52183 10.8067 5.64728 10.1359 5.85263 9.50984L5.84689 9.37649L2.63771 6.93405L2.53271 6.983C1.83681 8.34704 1.4375 9.87881 1.4375 11.5C1.4375 13.1212 1.83681 14.6528 2.53271 16.0169L5.86404 13.4901" fill="#FBBC05"></path>
+                                    <path d="M11.7039 5.32831C13.632 5.32831 14.9325 6.14448 15.6741 6.82654L18.5719 4.05375C16.7922 2.43257 14.4762 1.4375 11.7039 1.4375C7.688 1.4375 4.21973 3.69595 2.53125 6.98301L5.85118 9.50985C6.6841 7.08367 8.98865 5.32831 11.7039 5.32831" fill="#EB4335"></path>
+                                </svg><span class="d-none d-sm-block">Login with</span><span>Google</span></a><a class="d-flex align-items-center justify-content-center mb-md-0 flex-fill mb-2 gap-1" href="/auth/facebook">
+                                <div class="h-100 d-flex align-items-center gap-1"><img src="./images/fb-logo.webp" class="h-100 py-3" alt=""> Facebook</div>
+                            </a></div>
+                        <div class="signin-banner-from-box">
+                            <h5 class="signin-banner-from-subtitle">Or Sign In with email</h5>
+                            <form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="postbox__comment-input mb-3"><input type="email" class="inputText" required=""><span class="floating-label">Your Email</span><span class="mt-1 block text-red-500 text-danger style-Hp5pW" id="style-Hp5pW"></span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="postbox__comment-input mb-3"><input id="myInput" class="inputText password" type="password" required=""><span class="floating-label">Password</span><button type="button" class="eye-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="fs-5 iconify iconify--material-symbols" width="1em" height="1em" viewBox="0 0 24 24">
+                                                    <path fill="currentColor" d="m19.1 21.9l-3.5-3.45q-.875.275-1.775.413T12 19q-3.35 0-6.125-1.8t-4.35-4.75q-.125-.225-.187-.462t-.063-.488t.063-.488t.187-.462q.55-.975 1.175-1.9T4.15 7L2.075 4.9Q1.8 4.625 1.8 4.213t.3-.713q.275-.275.7-.275t.7.275l17 17q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275M12 16q.275 0 .525-.025t.5-.1l-5.4-5.4q-.075.25-.1.5T7.5 11.5q0 1.875 1.313 3.188T12 16m0-12q3.35 0 6.138 1.813t4.362 4.762q.125.2.188.438t.062.487t-.05.488t-.175.437q-.475.925-1.062 1.75t-1.313 1.55q-.35.35-.825.325t-.825-.375l-2-2q-.175-.175-.225-.413t.025-.487q.1-.325.15-.625t.05-.65q0-1.875-1.312-3.187T12 7q-.35 0-.65.05t-.625.15q-.25.075-.5.025T9.8 7l-.825-.825q-.475-.475-.312-1.1t.787-.8q.625-.125 1.263-.2T12 4m1.975 5.65q.275.325.462.713t.238.812q.025.2-.15.275t-.325-.075l-2.05-2.05Q12 9.175 12.088 9t.287-.175q.475.05.875.263t.725.562"></path>
+                                                </svg></button><span class="mt-1 block text-red-500 text-danger style-bUzDM" id="style-bUzDM"></span></div>
+                                    </div>
+                                </div>
+                                <div class="signin-banner-form-remember">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="postbox__comment-agree">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""><label class="form-check-label" for="flexCheckDefault">Remember me</label></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="postbox__forget text-end"><a href="/forgot-password">Forgot password ?</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="signin-banner-from-btn mb-20"><button type="submit" class="btn btn-primary flex items-center signin-btn w-100"><i class="bx bx-save"></i><span>Sign In</span></button></div>
+                            </form>
+                            <div class="signin-banner-from-register mt-5"><a href="/register">Don't have account ? <span>Register</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+   </body>
+   <script src="login.js"></script>
+</html>
