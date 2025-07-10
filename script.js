@@ -130,3 +130,5 @@ window.addEventListener("load", function () {
     breakpoints: breakpoints
   });
 });
+
+new WOW().init();
