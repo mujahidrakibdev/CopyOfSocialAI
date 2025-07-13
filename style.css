@@ -452,22 +452,13 @@ img {
 a { 
     color: var(--bs-link-color); 
     text-decoration: underline;
-} 
-
-a { 
     text-decoration: none; 
     transition: 0.3s;
-} 
-
-a { 
     -webkit-transition: all 0.3s ease-out 0s; 
     -moz-transition: all 0.3s ease-out 0s; 
     -ms-transition: all 0.3s ease-out 0s; 
     -o-transition: all 0.3s ease-out 0s; 
     transition: all 0.3s ease-out 0s;
-} 
-
-a { 
     color: inherit; 
     outline: none; 
     border: none; 
@@ -477,6 +468,7 @@ a {
 a:hover { 
     color: var(--bs-link-hover-color);
     text-decoration: none;
+    cursor: pointer;
 } 
 
 .mean-container .mean-nav  { 
