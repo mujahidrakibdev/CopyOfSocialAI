@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtn.addEventListener("click", function () {
         sidebar.classList.remove("opened");
         overlay.classList.remove("apply");
-    });
+    });0
 
     overlay.addEventListener("click", function () {
         sidebar.classList.remove("opened");
