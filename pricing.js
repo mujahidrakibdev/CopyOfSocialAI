@@ -1,5 +1,26 @@
 new WOW().init();
 
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.querySelector('.scroll-top');
+
+    // Show/hide button on scroll
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > window.innerHeight / 2) {
+        scrollBtn.classList.add('open');
+        } else {
+        scrollBtn.classList.remove('open');
+        }
+    });
+
+    // Scroll to top smoothly on click
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    });
+});
+
 // Sidebar
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -50,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// pricing category
 const pricingData = {
   monthly: {
     starter: {
@@ -186,6 +208,8 @@ const swiper = new Swiper('.swiper', {
 }
 });
 
+
+// accordion
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".accordion-buttons");
   const allItems = document.querySelectorAll(".accordion-items");
@@ -204,13 +228,12 @@ document.addEventListener("DOMContentLoaded", function () {
       allItems.forEach((item) => item.classList.remove("tp-faq-active"));
       buttons.forEach((b) => b.classList.add("collapsed"));
 
-      // If the clicked one was NOT open, open it now
+      
       if (!isOpen) {
         currentCollapse.classList.add("show");
         currentItem.classList.add("tp-faq-active");
         btn.classList.remove("collapsed");
       } else {
-        // If it was already open and now closed, open the 2nd one by default
         const secondItem = allItems[1];
         const secondCollapse = secondItem.querySelector(".accordion-collapse");
         const secondButton = secondItem.querySelector(".accordion-buttons");

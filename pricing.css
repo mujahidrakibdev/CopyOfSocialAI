@@ -31,7 +31,6 @@
   src:url(./fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(./fonts/fa-solid-900.woff2) format("woff2"),url(./fonts/fa-solid-900.woff) format("woff"),url(./fonts/fa-solid-900.ttf) format("truetype"),url(./fonts/fa-solid-900.svg#fontawesome) format("svg");
 } 
 body { 
-/* CSS Variables that may have been missed get put on body */ 
     --bs-gutter-x:  1.5rem;  
     --bs-gutter-y:  0;  
     --bs-gutter-x:  30px; 
@@ -217,6 +216,10 @@ button {
     transition: 1s ease; 
     border: none;
 } 
+
+.scroll-top.open {
+    bottom: 80px;
+}
 
 button:not(:disabled) { 
     cursor: pointer;
@@ -761,6 +764,84 @@ ul {
 .container-fluid { 
     --bs-gutter-x: 30px;
 } 
+
+.pricing-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-container-inner-1 {
+     width: 25% !important;
+}
+
+.pricing-container-inner-2 {
+     width: 75% !important;
+}
+
+@media (max-width: 1200px) {
+    .pricing-container {
+        margin: 0 50px;
+    }
+
+    .pricing-container-inner-1 {
+        width: 25% !important;
+    }
+
+    .pricing-container-inner-2 {
+        width: 75% !important;
+    }
+}
+
+.small-price{
+        display: none;
+    }
+
+@media (max-width: 1200px) {
+    .big-price{
+        display: none;
+    }
+    .small-price{
+        display: block;
+    }
+}
+
+.small-price-head{
+    width: 50%;
+}
+
+.small-price-items{
+    width: 100%;
+}
+
+.small-price-items-head{
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.small-price-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .small-price-container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .small-price-container {
+        margin: 0 30px;
+    }
+    .small-price-number{
+        font-size: 35px !important;
+    }
+}
+
+.small-tp-price-table-wrapper{
+    padding-top: 40px;
+    width: 100%;
+}
 
 .pt-125 { 
     padding-top: 125px;
@@ -1854,6 +1935,10 @@ p {
     width: 1170px;
 } 
 
+.tp-price-table-wrapper1 { 
+    width: 100%;
+} 
+
 .price-inner-white-bg .tp-price-table-wrapper  { 
     padding-top: 40px;
 } 
@@ -2627,9 +2712,12 @@ input {
     width: 125px !important;
 }
 
+.tp-price-top-wrapper{
+    display: flex;
+}
+
 .tp-price-top-item { 
     width: 33.33%; 
-    float: left; 
     padding: 40px 20px;
 } 
 
@@ -3141,7 +3229,7 @@ input {
   }  
 
 } 
-/* These were inline style tags. Uses id+class to override almost everything */
+
 #style-HOQHY.style-HOQHY {  
    display: none;  
 }  
@@ -3337,7 +3425,7 @@ input {
     left: 0px;  
     position: absolute;  
 }  
-/* These were inline style tags. Uses id+class to override almost everything */
+
 #style-e88A7.style-e88A7 {  
    display: none;  
 }  
