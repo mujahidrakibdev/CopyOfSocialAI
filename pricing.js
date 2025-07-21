@@ -81,10 +81,10 @@ const pricingData = {
       price: "$ 20.00",
       billing: "Billed monthly",
       link: "https://example.com/monthly-enterprise",
-      brands: "20",
-      credits: "8000",
-      posts: "100",
-      socials: "20",
+      brands: "20 Brands",
+      credits: "8,000 credits",
+      posts: "100 posts",
+      socials: "20 social accounts",
     },
     advance: {
       price: "$ 30.00",
@@ -103,10 +103,10 @@ const pricingData = {
       price: "$ 230.00",
       billing: "Billed yearly",
       link: "https://example.com/yearly-enterprise",
-      brands: "11",
-      credits: "5000",
-      posts: "25",
-      socials: "10",
+      brands: "11 Brands",
+      credits: "5000 credits",
+      posts: "25 posts",
+      socials: "10 social accounts",
     },
     advance: {
       price: "$ 350.00",
@@ -125,10 +125,10 @@ const pricingData = {
       price: "$ 500.00",
       billing: "Billed once in Lifetime",
       link: "https://example.com/lifetime-enterprise",
-      brands: "11",
-      credits: "5000",
-      posts: "25",
-      socials: "10",
+      brands: "11  Brands",
+      credits: "5000 credits",
+      posts: "25 posts",
+      socials: "10 social accounts",
     },
     advance: {
       price: "$ 700.00",
@@ -138,34 +138,30 @@ const pricingData = {
   },
 };
 
-// function updatePricing(type) {
-//   const data = pricingData[type];
-//   if (!data) {
-//     console.error(`No data found for plan type: ${type}`);
-//     return;
-//   }
+function updatePricing(type) {
+  const data = pricingData[type];
+  if (!data) {
+    console.error(`No data found for plan type: ${type}`);
+    return;
+  }
 
-//   document.querySelector('[data-plan="starter"]').innerText = data.starter.price;
-//   document.querySelector('[data-plan="starter-billing"]').innerText = data.starter.billing;
-//   document.querySelector('[data-plan="starter-link"]').href = data.starter.link;
-//   document.querySelector('[data-plan="starter-link"]').innerText = data.starter.btn;
+  document.querySelector('[data-plan="starter"]').innerText = data.starter.price;
+  document.querySelector('[data-plan="starter-billing"]').innerText = data.starter.billing;
+  document.querySelector('[data-plan="starter-link"]').href = data.starter.link;
+  document.querySelector('[data-plan="starter-btn"]').innerText = data.starter.btn;
 
-//   document.querySelector('[data-plan="enterprise"]').innerText = data.enterprise.price;
-//   document.querySelector('[data-plan="enterprise-billing"]').innerText = data.enterprise.billing;
-//   document.querySelector('[data-plan="enterprise-link"]').href = data.enterprise.link;
-//   document.querySelector('[data-plan="brands"]').innerText = data.enterprise.brands;
-//   document.querySelector('[data-plan="credits"]').innerText = data.enterprise.credits;
-//   document.querySelector('[data-plan="posts"]').innerText = data.enterprise.posts;
-//   document.querySelector('[data-plan="socials"]').innerText = data.enterprise.socials;
-//   document.querySelector('[data-plan="brands1"]').innerText = data.enterprise.brands;
-//   document.querySelector('[data-plan="credits1"]').innerText = data.enterprise.credits;
-//   document.querySelector('[data-plan="posts1"]').innerText = data.enterprise.posts;
-//   document.querySelector('[data-plan="socials1"]').innerText = data.enterprise.socials;
+  document.querySelector('[data-plan="enterprise"]').innerText = data.enterprise.price;
+  document.querySelector('[data-plan="enterprise-billing"]').innerText = data.enterprise.billing;
+  document.querySelector('[data-plan="enterprise-link"]').href = data.enterprise.link;
+  document.querySelector('[data-plan="brands"]').innerText = data.enterprise.brands;
+  document.querySelector('[data-plan="credits"]').innerText = data.enterprise.credits;
+  document.querySelector('[data-plan="posts"]').innerText = data.enterprise.posts;
+  document.querySelector('[data-plan="socials"]').innerText = data.enterprise.socials;
 
-//   document.querySelector('[data-plan="advance"]').innerText = data.advance.price;
-//   document.querySelector('[data-plan="advance-billing"]').innerText = data.advance.billing;
-//   document.querySelector('[data-plan="advance-link"]').href = data.advance.link;
-// }
+  document.querySelector('[data-plan="advance"]').innerText = data.advance.price;
+  document.querySelector('[data-plan="advance-billing"]').innerText = data.advance.billing;
+  document.querySelector('[data-plan="advance-link"]').href = data.advance.link;
+}
 
 const buttons = document.querySelectorAll(".nav-link");
 const indicator = document.querySelector(".test");
@@ -178,14 +174,14 @@ buttons.forEach((btn, index) => {
     document.querySelector(".nav-link.active")?.classList.remove("active");
     btn.classList.add("active");
 
-    // updatePricing(type);
+    updatePricing(type);
 
-    indicator.style.transform = `translateX(${index * 105}px)`;
+    indicator.style.transform = `translateX(${index * 100}%)`;
   });
 });
 
 // Default on load
-// updatePricing("monthly");
+updatePricing("monthly");
 
 // swiper
 const swiper = new Swiper(".swiper", {
