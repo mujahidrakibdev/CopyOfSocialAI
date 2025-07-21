@@ -1067,6 +1067,7 @@ ul ul {
   padding-left: 0px;
   margin-left: 0px;
   color: var(--tp-common-white);
+  width: fit-content;
 }
 
 .header-bottom__action a:first-child {
@@ -4226,9 +4227,9 @@ ul {
   background-color: hsl(228 40% 28%) / 0.9;
 }
 
-svg {
+/* svg {
   display: block;
-}
+} */
 
 .mr-3 {
   margin-right: 0.75rem;
@@ -4324,4 +4325,16 @@ svg {
   display: inline-block;
   z-index: 1;
   transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .sidebar-login {
+    padding: 15px 20px !important;
+  }
+  .header-bottom__btn a {
+    margin-left: 10px !important;
+  }
+  .tp-btn-blue-sm {
+    padding: 0 20px !important;
+  }
 }
